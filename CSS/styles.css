@@ -8,6 +8,9 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
 header {
@@ -123,4 +126,67 @@ nav ul li a {
     font-size: 16px;
     margin: 5px 0;
     text-align: start;
+}
+
+
+.pagination {
+    clear: both; /* Garante que a paginação não se sobreponha a elementos flutuantes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+
+.pagination button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.pagination button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#search-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.price-filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.price-filters label {
+    font-size: 14px;
 }

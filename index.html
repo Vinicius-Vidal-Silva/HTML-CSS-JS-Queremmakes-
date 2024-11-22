@@ -15,10 +15,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Minha Conta</a></li>
+                <li><a href="">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <!--<li><a href="#">Minha Conta</a></li>-->
             </ul>
         </nav>
     </header>
@@ -28,6 +28,15 @@
         <p>Descubra sua beleza natural com nossos produtos de maquiagem de alta qualidade.</p>
     </section>
 
+    <!--Lupa de pesquisa de produtos-->
+    <div class="search-container">
+        <input 
+            type="text" 
+            id="search-input" 
+            placeholder="Buscar produtos..." 
+        />
+    </div>
+    
     <!-- Filtros e Produtos -->
     <main>
         <div class="container">
@@ -35,41 +44,37 @@
             <aside class="filters">
                 <h2>Filtrar Produtos</h2>
                 <div class="filter-group">
+                    <!--
                     <h3>Por Tipo de Pele</h3>
                     <ul>
                         <li><input type="checkbox" id="pele-normal"><label for="pele-normal">Normal</label></li>
                         <li><input type="checkbox" id="pele-oleosa"><label for="pele-oleosa">Oleosa</label></li>
                         <li><input type="checkbox" id="pele-seca"><label for="pele-seca">Seca</label></li>
                     </ul>
+                    
                 </div>
-
+                -->
                 <div class="filter-group">
                     <h3>Por Preço</h3>
                     <ul>
-                        <li><input type="radio" name="preco" id="preco-1"><label for="preco-1">Até R$50</label></li>
-                        <li><input type="radio" name="preco" id="preco-2"><label for="preco-2">R$50 - R$100</label></li>
-                        <li><input type="radio" name="preco" id="preco-3"><label for="preco-3">Acima de R$100</label></li>
+                        <li><input type="radio" name="preco" id="price-50"><label for="price-50">Até R$50</label></li>
+                        <li><input type="radio" name="preco" id="price-50-100"><label for="price-50-100">R$50 - R$100</label></li>
+                        <li><input type="radio" name="preco" id="price-above-100"><label for="price-above-100">Acima de R$100</label></li>
                     </ul>
                 </div>
             </aside>
 
             <!-- Produtos à direita -->
             <section class="products">
-                <div class="product">
-                    <img src="https://cdn.shopify.com/s/files/1/1338/0845/products/brain-freeze_a_800x1200.jpg?v=1502255076" alt="Produto 1">
-                    <h3>Batom Matte</h3>
-                    <p class="price">R$49,90</p>
-                    <p class="review">⭐⭐⭐⭐⭐</p>
-                </div>
-                <div class="product">
-                    <img src="https://cdn.shopify.com/s/files/1/1338/0845/collections/blottedlip-lippie-stix_grande.jpg?v=1512588803" alt="Produto 2">
-                    <h3>Base Líquida</h3>
-                    <p class="price">R$89,90</p>
-                    <p class="review">⭐⭐⭐⭐</p>
-                </div>
-                <!-- Adicione mais produtos conforme necessário -->
+                <!-- Os produtos serão inseridos aqui dinamicamente pelo script.js -->
             </section>
         </div>
+        <div class="pagination">
+            <button id="prev" disabled>Anterior</button>
+            <span id="page-info">Página 1</span>
+            <button id="next">Próxima</button>
+        </div>
     </main>
+    <script src="JS/script.js"></script>
 </body>
 </html>

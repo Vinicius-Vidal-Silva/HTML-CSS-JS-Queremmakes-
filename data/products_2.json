@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Batom Vermelho",
+        "price": 30,
+        "rating": 4.5,
+        "image_link": "imgs/batom-vermelho.png"
+    },
+    {
+        "name": "Base Clara",
+        "price": 80,
+        "rating": 4,
+        "image_link": "imgs/base-clara.png"
+    }
+]
